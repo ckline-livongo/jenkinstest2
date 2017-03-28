@@ -1,7 +1,8 @@
-timestamps { pipeline {
+pipeline {
    
     agent { docker 'maven:3.3.3' }
-    stages {
+    timestamps { 
+       stages {
         stage('build') {
             steps {
                 sh 'mvn --version'
