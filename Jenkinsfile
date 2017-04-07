@@ -6,7 +6,7 @@ pipeline {
        stages {
          stage('build') {
            steps {
-                sh 'pico --version'
+                sh 'which postgresql'
                 sh 'java -version'
                 sh 'ls -al'
                 sh 'uname -a'
