@@ -6,7 +6,9 @@ pipeline {
        stages {
          stage('build') {
            steps {
+                sh 'java -version'
                 sh 'ls -al'
+                sh 'docker ps'
            }
          }
        }          
