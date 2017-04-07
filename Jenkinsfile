@@ -8,7 +8,7 @@ pipeline {
            steps {
                 sh 'java -version'
                 sh 'ls -al'
-                sh 'whoami'
+                sh 'pwd'
            }
          }
        }          
