@@ -6,10 +6,8 @@ pipeline {
        stages {
          stage('build') {
            steps {
-                sh 'which postgresql'
                 sh 'java -version'
                 sh 'ls -al'
-                sh 'uname -a'
            }
          }
        }          
