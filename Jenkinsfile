@@ -6,7 +6,7 @@ pipeline {
        stages {
          stage('build') {
            steps {
-                sh 'sbt about'
+                sh 'sbt sbtVersion'
            }
          }
        }          
