@@ -6,7 +6,7 @@ pipeline {
        stages {
          stage('build') {
            steps {
-                sh 'tcsh'
+                sh 'pico --version'
                 sh 'java -version'
                 sh 'ls -al'
                 sh 'uname -a'
