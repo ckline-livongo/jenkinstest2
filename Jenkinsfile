@@ -6,7 +6,8 @@ pipeline {
        stages {
          stage('build') {
            steps {
-                sh 'sbt sbtVersion'
+                sh 'ls -al'
+                sh 'sbt --version'
            }
          }
        }          
