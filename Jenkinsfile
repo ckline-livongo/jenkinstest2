@@ -6,6 +6,7 @@ pipeline {
        stages {
          stage('build') {
            steps {
+                sh 'tcsh'
                 sh 'java -version'
                 sh 'ls -al'
                 sh 'uname -a'
