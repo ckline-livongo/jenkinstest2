@@ -2,7 +2,7 @@ pipeline {
   options {
     timestamps()
   }     
-    agent { dockerfile true } 
+  agent { dockerfile {dir 'docker'} } 
        stages {
          stage('build') {
            steps {
