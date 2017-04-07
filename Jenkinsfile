@@ -2,7 +2,7 @@ pipeline {
   options {
     timestamps()
   }     
-    agent { docker 'maven:3.3.3' } 
+    agent { dockerfile true } 
        stages {
          stage('build') {
            steps {
